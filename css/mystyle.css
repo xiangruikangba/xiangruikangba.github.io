@@ -1,0 +1,48 @@
+.body {
+ont-family: Georgia, "Times New Roman",
+             "Microsoft YaHei", "微软雅黑",
+             STXihei, "华文细黑",
+             serif;
+}
+
+.title-and-name{
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+.navcontainer {
+    padding-top: 20px;
+}
+.navcontainer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.navcontainer li {
+    display: inline;
+    list-style-type: none;
+    padding-left: 9%;
+    padding-right: 9%
+}
+
+.navcontainer li a {
+    text-decoration: none;
+    font-size: 15px
+    padding: .2em 1em;
+    color: #333;
+}
+
+
+.navcontainer ul li a:hover
+{
+color: #808080;
+}
+
+
+
+.index-img {
+ padding-top: 20px;   
+}
