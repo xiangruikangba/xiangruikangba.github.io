@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>祥瑞康巴</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="new/css/normalize.css">
+    <link rel="stylesheet" href="new/css/preload2.css">
+    <script src="new/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- 载入动画 -->
+    <div id="demo-content">
+        <div id="loader-wrapper">
+            <canvas id="loader"></canvas>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="new/js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <!--<script src="new/js/main.js"></script>-->
+    <script src="new/js/vendor/pxloader-all.min.js"></script>
+
+    <script src="new/js/preload2.js"></script>
+
+    <script type="text/javascript">
+    var loader = new PxLoader();
+    loader.addImage('img/index/1.jpg');
+    loader.addImage('img/index/2.jpg');
+    loader.addImage('img/index/3.jpg');
+
+    // callback that will be run once images are ready 
+    loader.addCompletionListener(function() {
+        console.log("img loaded");
+        $('body').addClass('loaded');
+    });
+
+    // begin downloading images 
+    loader.start();
+    </script>
+</body>
+
+</html>
